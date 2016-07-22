@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body ng-app="router">
+    <header>Image Gallery</header>
+    <section class="content" ng-controller="mainController">
+      <button type="button" ng-click="next()">Next</button>
+      <div ng-view></div>
+      <button type="button" ng-click="prev()">Prev</button>
+    </section>
+
+    <footer>Footer</footer>
+
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/routeController.js"></script>
+    <script src="controllers/mainController.js"></script>
+  </body>
+</html>
